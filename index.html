@@ -18,19 +18,22 @@
                 </div>
                 <div class="content__item">
                     <label for="nombre1">Nombre 2</label></br>
-                    <input type="number" name="nombre1" id="nombre1" placeholder="Entrez le second nombre"></br>
+                    <input type="number" name="nombre1" id="nombre2" placeholder="Entrez le second nombre"></br>
                 </div>
                 <div class="content__item">
                     <label for="Resultat">Resultat</label></br>
-                    <textarea  name="Resultat" id="Resultat" readonly></textarea>
+                    <div class="Resultat" id="Resultat" name="Resultat"></div>
                 </div>
                 <div class="button">
-                    <div class="button__item btn__primary">CALCULER</div>
-                    <div class="button__item btn__secondary">SUPPRIMER</div>
+                    <div class="button__item btn__primary" onclick="algoEuclide()">CALCULER</div>
+                    <div class="button__item btn__secondary" onclick="deleted()">SUPPRIMER</div>
                 </div>
             </div>
         </div>  
     </main>
+    <footer>
+        <div id="copyrigth">© 2024 By Chris kaba</div>
+    </footer>
 </body>
 <script src="./js/euclide.js"></script>
 </html>
