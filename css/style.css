@@ -1,8 +1,14 @@
 body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 0;
 }
 main{
     margin-top: 5rem;
+    margin-bottom: 2rem;
 }
 .container{
     max-width: 350px;
@@ -19,17 +25,22 @@ h1{
 label{
     font-size: 1.2rem;
 }
-input,textarea{
+input,.Resultat{
    margin-top: 10px;
    margin-bottom: 20px;
-   width: 100%;
+   width: 90%;
    height: 2rem;
    border: 1px solid black;
    border-radius: 7px;
+   font-size: 1rem;
+   padding-left: 1rem;
 }
 
-textarea{
+.Resultat{
+    display: flex;
+    align-items: center;
     background-color: rgb(222, 221, 221);
+    font-size: 1.3rem;
 }
 .content__item{
     width: 90%;
@@ -48,6 +59,7 @@ textarea{
 .button__item{  
     border-radius: 10px;
     padding: 10px;
+    cursor: pointer;
 }
 .btn__primary{
     border: 1px solid #E5203D;
@@ -57,4 +69,13 @@ textarea{
 .btn__secondary{
     border: 1px solid black;
     color: black;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5203D;
+    color: white;
+    font-size: 1.3rem;
+    height: 100px;
 }
